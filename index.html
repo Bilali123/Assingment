@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<head>
+<title>Dodge Challenger SRT</title>
+
+<!-- Window event -->
+
+<script>
+  alert("Dobrodošli!");
+function pFunction() {
+}
+</script>
+
+<!-- Ovo je za video Media event -->
+
+
+<script>
+var autoPlayVideo = document.getElementById("Videjo");
+    autoPlayVideo.oncanplaythrough = function() {
+    autoPlayVideo.play();
+    autoPlayVideo.pause();
+    autoPlayVideo.play();
+    }
+</script>
+
+<!-- Ovo je Coockie -->
+
+
+<script>
+function createCookie(cookieName,cookieValue,daysToExpire)
+    {
+    var date = new Date();
+    date.setTime(date.getTime()+(daysToExpire2460601000));
+    document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+    }
+    function accessCookie(cookieName)
+    {
+    var name = cookieName + "=";
+    var allCookieArray = document.cookie.split(';');
+    for(var i=0; i<allCookieArray.length; i++) { var temp=allCookieArray[i].trim(); if (temp.indexOf(name)==0) return temp.substring(name.length,temp.length); } return "" ; } function checkCookie() { var user=accessCookie("testCookie"); if (user !="" ) alert("Dobrodošli nazad" + user + " !!!"); else { user=prompt("Upišite svoje ime"); num=prompt("Koliko godišta imate?"); if (user!="" && user!=null) { createCookie("testCookie", user, num); } } }
+
+</script>
+
+<style>
+.droptarget {
+  float: left; 
+  width: 300px; 
+  height: 40px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
+
+function dragging(event) {
+  document.getElementById("demo").innerHTML = "The p element is being dragged";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("demo").innerHTML = "The p element was dropped";
+}
+</script>
+
+<script>
+function lFunction() {
+  document.getElementById("demok").innerHTML = "Transportovani ste na stranicu o pravljenu automobila";
+}
+</script>
+
+
+<!-- Ovo je Keyboard event -->
+
+
+<script>
+function hFunction() {
+  alert("Počeli ste pisati");
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body onpageshow="pFunction(); checkCookie()" >
+	<video id="Videjo" autoplay="autoplay" loop="loop" playsinline="playsinline" controls="controls" preload="metadata" data-aos="fade-up width="100%">
+  <source src="IMG/Dodge Challenger.mp4">
+</video>
+<br><br><br>
+<center>
+<img src="IMG/Dodge.jpg">
+</center>
+<hr>
+<br><br>
+<div align="left">
+<img src="IMG/Dodge1.jpg" style="float:left" height="330px" width="700px"> 
+
+
+
+<font face="Impact" size="3px" color="black">2018</font>
+<br>
+<font face="Arial" size="6px" color="black">DODGE CHALLENGER SRT® 392</font>
+<br><br><br>
+<font face="arial" size="4px">
+<li>Configurable Drive Modes</li>
+<li>SRT® Flat-Bottom Steering Wheel</li>
+<li>485-HP (Estimated) 6.4L 392 HEMI® V8 Engine</li>
+<li>High-Performance Suspension</li>
+</font>
+
+<hr>
+<p>Napišite koju vrstu auta hočete da tražite i pritisnite "ENTER".</p>
+
+<input type="search" id="myInput" onsearch="aFunction()"  onkeypress="hFunction()">
+
+
+
+<p id="demo"></p>
+
+
+
+
+<!-- Ovo je za search Form event -->
+
+
+
+
+
+<script>
+function aFunction() {
+   var x = document.getElementById("myInput");
+   document.getElementById("demo").innerHTML = "Tražite: " + x.value;
+}
+</script>
+
+
+
+<input type="text" oncopy="bFunction()" value="Dodge Challenger">
+
+<p id="demos"></p>
+
+
+<!-- Ovo je za kopiranje teksta Clipboard event -->
+
+
+<script>
+function bFunction() {
+  document.getElementById("demos").innerHTML = "Kopirali ste ovaj tekst!"
+}
+</script>
+
+
+
+
+
+
+
+
+<img src="IMG/Cijena.png">
+<br>
+<a href="https://www.dodge.com/bmo.html#/vehicles">
+<button onclick="lFunction()">Pritisni me</button></a><br>
+<img src="IMG/build.png">
+
+
+<a href="https://www.dodge.com/crossbrand_us/common/bridge/dodge/inventory.html?app=sni&ccode=CUD201803LADH22A&llp=2DA&trim=sxt&vehicle=challenger&year=2018">
+<img src="IMG/Search.png">
+</a>
+
+<br><br><br>
+
+<center>
+<img src="IMG/Choose from.png" width="100%">
+</center>
+
+
+
+<center>
+
+<font face="Impact" size="7px" color="black">READY TO DOMINATE</font>
+<br>
+
+<img src="IMG/Challenger Lights.png" style="float:right">
+
+<br><br><br>
+
+
+
+
+
+
+
+<center>
+<font face="Impact" size="6px" color="black">BIGGER AND BADDER</font>
+<br><br>
+<font face="Arial" size="4px" color="black">The Challenger SRT® Hellcat Widebody is a monster that’s fierce in both design and performance.</font>
+<br><br>
+<a href="https://www.dodge.com/2018/challenger/widebody/modal-container-1.html">
+<font face="arial" size="4px" color="red"  style="text-decoration: none">Learn more</font>
+</a></center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<font face="Impact" size="7px" color="black">PERFORMANCE</font>
+
+<img src="IMG/autici.jpg" width="100%">
+
+
+<font face="Impact" size="6px" color="black">TAKE THE STREETS BY STORM</font>
+
+<br><br><br><br>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+<font face="Impact" size="4px" color="black" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">2010 Dodge Challenger R/T</font><br>
+</div>
+<font face="Impact" size="4px" color="black">2010 Dodge Challenger R/T Classic in Detonator Yellow</font><br>
+<font face="Impact" size="4px" color="black">2010 Dodge Challenger SRT-8</font><br>
+<font face="Impact" size="4px" color="black">2010 Dodge Challenger SRT Hellcat</font><br>
+<br><br>
+
+
+  
+
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<p style="clear:both;" id="demo"></p>
+<div style="float:left">
+<font face="Arial" size="5px" color="black">Ovdje stavite vaše auto</font>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
